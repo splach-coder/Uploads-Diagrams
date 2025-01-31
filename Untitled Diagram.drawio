@@ -1,49 +1,92 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:134.0) Gecko/20100101 Firefox/134.0" version="26.0.10">
   <diagram name="Page-1" id="40tswewPP5Z8xJik5HZg">
-    <mxGraphModel>
+    <mxGraphModel dx="1434" dy="822" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="2" value="2️⃣ Azure Function processes PDFs" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1422" y="8" width="239" height="124" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-12" value="EMAIL" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="360" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="3" value="1️⃣ User sends PDFs via email" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="8" y="8" width="1254" height="124" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-13" value="" style="points=[[0.25,0,0],[0.5,0,0],[0.75,0,0],[1,0.25,0],[1,0.5,0],[1,0.75,0],[0.75,1,0],[0.5,1,0],[0.25,1,0],[0,0.75,0],[0,0.5,0],[0,0.25,0]];shape=mxgraph.bpmn.task2;whiteSpace=wrap;rectStyle=rounded;size=10;html=1;container=1;expand=0;collapsible=0;taskMarker=abstract;isLoopStandard=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="120" width="490" height="860" as="geometry" />
         </mxCell>
-        <mxCell id="4" value="1️⃣ User" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="33" y="43" width="119" height="54" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Qhz81dz1TcL4HdZ_oRF7-13" source="Qhz81dz1TcL4HdZ_oRF7-20" target="Qhz81dz1TcL4HdZ_oRF7-22">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="5" value="Logic Apps" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="355" y="43" width="136" height="54" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-20" value="foreach attachement" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="158.23" y="-10" width="173.54" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6" value="Extracts PDFs" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="714" y="43" width="157" height="54" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Qhz81dz1TcL4HdZ_oRF7-13" source="Qhz81dz1TcL4HdZ_oRF7-22" target="Qhz81dz1TcL4HdZ_oRF7-27">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="7" value="Azure Function" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1069" y="43" width="168" height="54" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-22" value="AI extractor" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="183.75" y="154.79999999999998" width="122.5" height="45.47397260273972" as="geometry" />
         </mxCell>
-        <mxCell id="8" value="Extracts structure" style="whiteSpace=wrap;strokeWidth=2;" vertex="1" parent="1">
-          <mxGeometry x="1447" y="43" width="189" height="54" as="geometry" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-24" value="send pdf" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="189.9983333333333" y="68.79999999999998" width="173.54166666666666" height="68.79999999999998" as="geometry" />
         </mxCell>
-        <mxCell id="9" value="Sends PDFs via email" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="4" target="5">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-25" value="&lt;div&gt;returns JSON&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="199.99666666666667" y="189.19999999999996" width="173.54166666666666" height="68.79999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="Qhz81dz1TcL4HdZ_oRF7-13" source="Qhz81dz1TcL4HdZ_oRF7-27" target="Qhz81dz1TcL4HdZ_oRF7-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-27" value="parse json and gets container" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="183.75" y="257.99999999999994" width="122.49999999999999" height="103.19999999999997" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="Qhz81dz1TcL4HdZ_oRF7-13" source="Qhz81dz1TcL4HdZ_oRF7-29" target="Qhz81dz1TcL4HdZ_oRF7-31">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-29" value="" style="shape=datastore;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="30.62" y="341.64" width="61.25" height="68.36" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="Qhz81dz1TcL4HdZ_oRF7-13" source="Qhz81dz1TcL4HdZ_oRF7-31" target="Qhz81dz1TcL4HdZ_oRF7-36">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-31" value="Send http request with merged data" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="158.23" y="444.84" width="183.75" height="65.16" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-33" value="&lt;div&gt;merging data&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="253.34" y="376.51506849315064" width="83.54" height="33.457534246575335" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-34" value="Bulding sql queries to get plda data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="2.13" y="258" width="118.23" height="120.16438356164382" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-35" value="return data if data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="59.99666666666667" y="376.0438356164383" width="173.54166666666666" height="68.79999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="Qhz81dz1TcL4HdZ_oRF7-13" source="Qhz81dz1TcL4HdZ_oRF7-36" target="Qhz81dz1TcL4HdZ_oRF7-39">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-36" value="" style="sketch=0;outlineConnect=0;fontColor=#232F3E;gradientColor=none;fillColor=#7AA116;strokeColor=none;dashed=0;verticalLabelPosition=bottom;verticalAlign=top;align=center;html=1;fontSize=12;fontStyle=0;aspect=fixed;pointerEvents=1;shape=mxgraph.aws4.http_protocol;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="180.52" y="553.6966666666667" width="139.18" height="139.18" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-37" value="http request to python" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;strokeWidth=6;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="163.3366666666667" y="577.2602739726027" width="173.54166666666666" height="68.79999999999998" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-39" value="create this as file in the location " style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="158.23" y="770" width="183.75" height="49.88" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-41" value="return json data" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="Qhz81dz1TcL4HdZ_oRF7-13">
+          <mxGeometry x="258.44" y="716.6666666666666" width="131.56" height="33.45809523809523" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-14" value="get the attachments" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="390" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-16" value="Actor" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="20" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-17" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="90" y="40" as="sourcePoint" />
+            <mxPoint x="350" y="40" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="200" y="40" />
+            </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="10" value="Detects new email with attachments" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="5" target="6">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="11" value="Sends PDFs to Azure Function" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="6" target="7">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="12" value="Processes PDFs" style="curved=1;startArrow=none;endArrow=block;exitX=1;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="7" target="8">
-          <mxGeometry relative="1" as="geometry">
-            <Array as="points" />
-          </mxGeometry>
+        <mxCell id="Qhz81dz1TcL4HdZ_oRF7-18" value="sending emails" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="10" width="120" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
